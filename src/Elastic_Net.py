@@ -8,7 +8,7 @@ from sklearn import preprocessing
 from sklearn import linear_model
 from sklearn.cluster import KMeans
 from sklearn.metrics import confusion_matrix, accuracy_score
-from sklearn.model_selection import train_test_split
+from sklearn import cross_validation
 
 
 def min_coord(j,X,y,lambduh,beta,alpha):
@@ -26,9 +26,9 @@ def min_coord(j,X,y,lambduh,beta,alpha):
     return beta_j
 
 # Testing
-d=np.size(X_scaled, 1)
-n=np.size(X_scaled, 0)
-beta_init = np.ones(d)
+#d=np.size(X_scaled, 1)
+#n=np.size(X_scaled, 0)
+#beta_init = np.ones(d)
 #min_coord(0, X_scaled, Y_scaled, 0.1, beta_init ,alpha=0.9)
 
 def get_data():
@@ -41,7 +41,7 @@ def get_data():
     my_scaleX  = sklearn.preprocessing.StandardScaler().fit(X)
     X_scaled = my_scaleX.transform(X)
     Y_scaled = (Y - np.mean(Y))/np.std(Y)
-    X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X_scaled, Y_scaled, random_state=0)
+    X_train, X_test, y_train, y_test = cross_validation.train_test_split(X_scaled,Y_scaled,test_size=0.25,random_state=42)
     return X_train, X_test, y_train, y_test
 
 def computeobj(beta, X, y, lambduh, alpha):
