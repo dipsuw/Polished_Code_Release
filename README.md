@@ -4,7 +4,7 @@ The elastic net is a regularized regression method that linearly combines the L1
 
 [logo]: https://github.com/dipsuw/Polished_Code_Release/blob/master/elasticnet_eq.PNG
 
-In this repo, I have added following in 'src' directory:
+## In this repo, I have added following files in 'src' directory:
 ### Elastic_Net.py: 
 This is the source code file where I have implemented my own coordinate descent algorithm to solve least-squares regression with elastic net regularization.
 ### demo_on_real_dataset.py:
@@ -14,7 +14,7 @@ This is the demo file that allows the user to launch ElasticNet method on a real
 ### compare_with_sklearn.py
 This is the file that allows user to perform comparison between my implementation and scikit-learns ElasticNetCV on a real world dataset(Hitters)
 
-## To run these files, clone the repo and make sure following packages are installed on the system.
+## To run the above files, clone this repo and make sure following packages are installed on the system.
 * pandas
 * numpy
 * sklearn
