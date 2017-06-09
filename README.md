@@ -1,4 +1,5 @@
 # Elastic Net CV
+The elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods. The loss function is given as below. I used cyclic coordinate descent algorithm to implement this regression method.
 ![alt text][logo]
 
 [logo]: https://github.com/dipsuw/Polished_Code_Release/blob/master/elasticnet_eq.PNG
