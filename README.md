@@ -1,6 +1,7 @@
 # Elastic Net CV
+![alt text][logo]
 
-![alt text](https://github.com/dipsuw/Polished_Code_Release/elasticnet_eq.PNG)
+[logo]: https://github.com/dipsuw/Polished_Code_Release/blob/master/elasticnet_eq.PNG
 
 In this repo, I have added following in 'src' directory:
 ### Elastic_Net.py: 
