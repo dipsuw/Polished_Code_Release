@@ -14,4 +14,11 @@ This is the demo file that allows the user to launch ElasticNet method on a real
 ### compare_with_sklearn.py
 This is the file that allows user to perform comparison between my implementation and scikit-learns ElasticNetCV on a real world dataset(Hitters)
 
-
+## To run these files, clone the repo and make sure following packages are installed on the system.
+* pandas
+* numpy
+* sklearn
+* matplotlib.pyplot
+* sklearn.cross_validation
+* sklearn.linear_model.ElasticNet
+* sklearn.linear_model.ElasticNetCV
