@@ -1,4 +1,5 @@
 # Elastic Net CV
+![Elastic Net equation](https://github.com/dipsuw/Polished_Code_Release/src/elasticnet_eq.png)
 
 In this repo, I have added following in 'src' directory:
 ### Elastic_Net.py: 
